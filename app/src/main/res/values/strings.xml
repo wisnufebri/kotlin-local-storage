@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">RefactoryTest</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="capture">Open File</string>
+    <string name="btnHome">Temukan Solusi Anda</string>
+    <string name="btnHome2">Tingkatkan Skill Anda</string>
+    <string name="partner">Partner Ekslusif Kami</string>
+    <string name="course">Course</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="posisi">Posisi saat ini :</string>
+    <string name="longitude">Longitude :</string>
+    <string name="latitude">Latitude :</string>
+    <string name="data">123456789</string>
+    <string name="nama">nama</string>
+    <string name="email">email</string>
+    <string name="foto">foto</string>
+    <string name="header">Empowering People Through Programming</string>
+    <string name="isi">Refactory adalah perusahaan edukasi dan teknologi yang menyediakan layanan lengkap berupa course maupun custom training yang materinya dapat disesuaikan dengan kebutuhan teknologi dan bisnis perusahaan Anda.</string>
+    <string name="text_accounts">All Accounts</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="text_login">Login</string>
+    <string name="text_register">Register</string>
+    <string name="error_message_name">Enter Full Name</string>
+    <string name="error_message_email">Enter Valid Email</string>
+    <string name="error_message_age">Enter Age</string>
+    <string name="error_message_password">Enter Password</string>
+    <string name="success_message">Registration Successful</string>
+    <string name="text_not_member">No account yet? Create one</string>
+    <string name="text_already_member">Already a member? Login</string>
+    <string name="error_email_exists">Email Already Exists</string>
+    <string name="error_password_match">Password Does Not Matches</string>
+    <string name="error_valid_email_password">Wrong Email or Password</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_hello">Selamat Datang</string>
+
+
+</resources>

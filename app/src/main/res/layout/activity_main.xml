@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gradient_color"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:scrollbarStyle="outsideOverlay">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!-- Content here -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView2"
+                android:layout_width="320dp"
+                android:layout_height="400dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnLogin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:gravity="center"
+                        android:text="@string/login"
+                        android:textFontWeight="@android:integer/config_longAnimTime"
+                        android:textSize="30dp"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/user"
+                        tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout2"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView"
+                        app:passwordToggleTint="@color/soft">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/inputEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout3"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleTint="@color/soft">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/inputPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Password"
+                            android:inputType="textPassword" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/btnLogin"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:backgroundTint="#dbdbdb"
+                        android:text="@string/login"
+                        android:textColor="@color/black"
+                        tools:targetApi="lollipop" />
+
+                    <Button
+                        android:id="@+id/btnSignup"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#dbdbdb"
+                        android:text="@string/register"
+                        android:textColor="@color/black"
+                        tools:targetApi="lollipop" />
+
+                </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

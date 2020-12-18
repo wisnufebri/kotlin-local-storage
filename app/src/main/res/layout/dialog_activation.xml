@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvToolBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="20dp"
+    app:strokeColor="@color/stroke_color"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="@null"
+            app:srcCompat="@drawable/ic_launcher_background"
+            tools:ignore="VectorDrawableCompat" />
+
+        <Button
+            android:id="@+id/btnNext"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+            android:layout_gravity="end"
+            android:text="@string/email" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

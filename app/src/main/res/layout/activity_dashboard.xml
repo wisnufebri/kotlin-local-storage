@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_color"
+    android:orientation="vertical"
+    tools:context=".Dashboard">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:scrollbarStyle="outsideOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/Widget.MaterialComponents.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:gravity="center"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:padding="10dp"
+                android:text="@string/header"
+                android:textColor="@color/white"
+                android:textFontWeight="@android:integer/config_longAnimTime"
+                android:textSize="25dp" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_height="wrap_content"
+                android:text="@string/isi"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textFontWeight="@android:integer/config_mediumAnimTime"
+                android:layout_margin="30dp"
+                android:textSize="15dp"
+                android:fontFamily="sans-serif-condensed-light"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/soft"
+                    android:text="@string/btnHome"
+                    android:textColor="@color/white"
+                    app:strokeColor="@color/soft"
+                    app:strokeWidth="3dp" />
+
+                <Button
+                    android:id="@+id/btnCourse"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnHome2"
+                    android:textColor="@color/white"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="3dp" />
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/stroke_color"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_height="wrap_content"
+                        android:text="@string/partner"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textFontWeight="@android:integer/config_mediumAnimTime"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15dp"
+                        android:fontFamily="sans-serif-condensed-light"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/qasir"
+                            android:layout_marginRight="10dp"
+                            tools:targetApi="lollipop" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/esdm"
+                            tools:targetApi="lollipop" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/killer_white"
+                            tools:targetApi="lollipop" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

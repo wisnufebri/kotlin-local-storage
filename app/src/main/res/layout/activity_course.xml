@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background1"
+    tools:context=".CourseActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="30dp"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/stroke_color"
+                app:cardCornerRadius="25dp">
+
+                <androidx.appcompat.widget.AppCompatCheckedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/app_name"
+                    android:textAlignment="center"
+                    android:textSize="30dp" />
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:gravity="center">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardBackgroundColor="@color/stroke_color"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="1dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="@string/course"
+                    android:textSize="30dp" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="@color/stroke_color"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="1dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="@string/course"
+                    android:textSize="30dp" />
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:gravity="center">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardBackgroundColor="@color/stroke_color"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="1dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="@string/course"
+                    android:textSize="30dp" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="@color/stroke_color"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="1dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="@string/course"
+                    android:textSize="30dp" />
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
